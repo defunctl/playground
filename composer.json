@@ -1,0 +1,36 @@
+{
+  "name": "evopress/playground",
+  "type": "project",
+  "description": "A lightweight PHP project for hassle-free code experimentation and testing.",
+  "keywords": ["template","playground","quick testing"],
+  "license": "MIT",
+  "require": {
+    "php": ">=8.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "COLLISION_PRINTER=DefaultPrinter vendor/bin/phpunit --color=always --no-progress --no-output",
+    "test:para": "COLLISION_PRINTER=DefaultPrinter vendor/bin/paratest"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require-dev": {
+    "brianium/paratest": "^7.2",
+    "nunomaduro/collision": "^7.8",
+    "phpunit/phpunit": "^10.3"
+  }
+}
