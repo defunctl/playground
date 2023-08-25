@@ -4,7 +4,7 @@ A lightweight PHP project for hassle-free code experimentation and testing.
 
 ## 🔨 Requirements
 
-- PHP 8.2
+- PHP 8.2+
 
 ## 〽️ Quick Start
 
