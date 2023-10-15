@@ -36,6 +36,7 @@
     "larapack/dd": "^1.1",
     "moderntribe/coding-standards": "^3.0",
     "nunomaduro/collision": "^7.8",
+    "php-mock/php-mock-mockery": "^1.4",
     "phpunit/phpunit": "^10.3"
   }
 }
