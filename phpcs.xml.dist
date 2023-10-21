@@ -24,4 +24,10 @@
     <rule ref="SlevomatCodingStandard.Classes.ClassStructure.IncorrectGroupOrder">
         <exclude-pattern>tests/*</exclude-pattern>
     </rule>
+
+    <rule ref="SlevomatCodingStandard.ControlStructures.EarlyExit">
+        <properties>
+            <property name="ignoreStandaloneIfInScope" value="1" />
+        </properties>
+    </rule>
 </ruleset>
