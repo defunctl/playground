@@ -19,6 +19,8 @@
   },
   "scripts": {
     "test": "COLLISION_PRINTER=DefaultPrinter vendor/bin/phpunit --color=always --no-progress --no-output",
+    "test:unit": "@test --testsuite Unit",
+    "test:feature": "@test --testsuite Feature",
     "test:para": "COLLISION_PRINTER=DefaultPrinter vendor/bin/paratest"
   },
   "config": {
@@ -36,6 +38,7 @@
     "larapack/dd": "^1.1",
     "moderntribe/coding-standards": "^3.0",
     "nunomaduro/collision": "^7.8",
+    "php-di/php-di": "^7.0",
     "php-mock/php-mock-mockery": "^1.4",
     "phpunit/phpunit": "^10.3"
   }
