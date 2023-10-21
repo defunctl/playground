@@ -21,9 +21,9 @@
     <!-- Include the Modern Tribe coding standard -->
     <rule ref="ModernTribe" />
 
-    <rules>
+    <rule ref="SlevomatCodingStandard.Arrays.DisallowImplicitArrayCreation">
         <exclude name="SlevomatCodingStandard.Arrays.DisallowImplicitArrayCreation" />
-    </rules>
+    </rule>
 
     <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint">
         <exclude name="SlevomatCodingStandard.TypeHints.PropertyTypeHint.MissingTraversableTypeHintSpecification" />
