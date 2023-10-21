@@ -21,6 +21,14 @@
     <!-- Include the Modern Tribe coding standard -->
     <rule ref="ModernTribe" />
 
+    <rules>
+        <exclude name="SlevomatCodingStandard.Arrays.DisallowImplicitArrayCreation" />
+    </rules>
+
+    <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint">
+        <exclude name="SlevomatCodingStandard.TypeHints.PropertyTypeHint.MissingTraversableTypeHintSpecification" />
+    </rule>
+
     <rule ref="SlevomatCodingStandard.Classes.ClassStructure.IncorrectGroupOrder">
         <exclude-pattern>tests/*</exclude-pattern>
     </rule>
