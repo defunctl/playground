@@ -23,4 +23,12 @@ final class ContainerTest extends TestCase {
 		$this->assertSame( $calculator, $this->container->get( Calculator::class ) );
 	}
 
+	public function test_it_gets_sample_definition(): void {
+		$this->assertSame( [
+			1,
+			2,
+			3,
+		], $this->container->get( 'sample.definition' ) );
+	}
+
 }
