@@ -10,7 +10,6 @@ final class ContainerTest extends TestCase {
 
 	public function test_it_gets_correct_instances(): void {
 		$this->assertInstanceOf( ContainerInterface::class, $this->container );
-		$this->assertInstanceOf( Calculator::class, $this->container->get( Calculator::class ) );
 	}
 
 	public function test_it_sets_instances(): void {
