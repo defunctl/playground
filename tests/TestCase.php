@@ -2,17 +2,17 @@
 
 namespace Tests;
 
-use DI\Container;
 use Mockery;
+use Psr\Container\ContainerInterface;
 
 class TestCase extends \PHPUnit\Framework\TestCase {
 
-	protected Container $container;
+	protected ContainerInterface $container;
 
 	protected function setUp(): void {
 		parent::setUp();
 
-		$this->container = new Container();
+		$this->container = app()->container();
 	}
 
 	protected function tearDown(): void {
